@@ -10,10 +10,10 @@ if (!defined('ABSPATH')) exit;
 // Adiciona página no admin
 add_action('admin_menu', function () {
     add_options_page(
-        'Getnet Webhook Forwarder',
-        'Getnet Webhook Forwarder',
+        'Webhook proxy',
+        'Webhook proxy',
         'manage_options',
-        'getnet-webhook-forwarder',
+        'webhook-proxy',
         'gwf_render_settings_page'
     );
 });
