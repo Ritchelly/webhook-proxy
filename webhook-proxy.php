@@ -78,6 +78,7 @@ function gwf_forward_request() {
         'timeout' => 15,
     ]);
 
+    error_log(print_r($response, true));
     // Finaliza sem processar mais nada
     status_header(200);
     exit;
