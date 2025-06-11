@@ -88,6 +88,7 @@ function gwf_forward_request() {
     
     $logger->info(json_encode($logBody, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES), $context);
 
-    wp_remote_retrieve_body($response);
+    echo wp_remote_retrieve_body($response);
+    die();
 }
 
